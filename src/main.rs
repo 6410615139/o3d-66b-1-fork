@@ -77,7 +77,7 @@ impl AreaEx {
 }
 
 fn main() {
-    if let Ok(mut pci) = read("data/kota_circuit3.ply") {
+    if let Ok(mut pci) = read("../data/kota_circuit3.ply") {
         proc2(&mut pci);
     }
 }
@@ -246,7 +246,7 @@ fn proc2(pci: &mut PointCloudInfo) {
             }
         }
     }
-    write("data/kota-3.ply", &pnts);
+    write("../data/kota-3.ply", &pnts);
     print!("FIN {}\n", cn);
 }
 
